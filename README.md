@@ -4,7 +4,7 @@
 
 An electrical-engineering × machine-learning portfolio project, built with Python and scikit-learn. It includes a reproducible data pipeline, chronological validation, a strong linear comparison, a random forest, automated tests, and a results report.
 
-![Measured versus estimated solar power](reports/results.png?v=2)
+![Measured versus estimated solar power](reports/solar_results_complete.png)
 
 ## The question
 
