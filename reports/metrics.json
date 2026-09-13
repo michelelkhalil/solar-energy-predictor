@@ -1,0 +1,83 @@
+{
+  "task": "Same-time measured-weather AC power estimation; not day-ahead forecasting",
+  "selected_model": "Random forest",
+  "power_unit": "source AC_POWER units (commonly described as kW; not independently calibrated)",
+  "audit": {
+    "raw_generation_rows": 68778,
+    "inverters": 22,
+    "generation_timestamps": 3158,
+    "complete_timestamps": 3057,
+    "matched_timestamps": 3057,
+    "retained_timestamps": 3057,
+    "invalid_generation_rows": 0
+  },
+  "splits": {
+    "train": {
+      "rows": 1729,
+      "start": "2020-05-15 01:00:00",
+      "end": "2020-06-03 23:45:00"
+    },
+    "validation": {
+      "rows": 658,
+      "start": "2020-06-04 00:00:00",
+      "end": "2020-06-10 23:45:00"
+    },
+    "test": {
+      "rows": 670,
+      "start": "2020-06-11 00:00:00",
+      "end": "2020-06-17 23:45:00"
+    }
+  },
+  "validation": {
+    "Mean baseline": {
+      "MAE": 7769.596129542474,
+      "RMSE": 8783.274329061818,
+      "R2": -0.00047458173387249225
+    },
+    "Ridge regression": {
+      "MAE": 464.95493040222516,
+      "RMSE": 901.3752389802653,
+      "R2": 0.9894633049237096
+    },
+    "Random forest": {
+      "MAE": 359.8576772738176,
+      "RMSE": 818.8558840234089,
+      "R2": 0.9913042286283945
+    }
+  },
+  "test": {
+    "Mean baseline": {
+      "MAE": 7139.810225141435,
+      "RMSE": 7926.5911172427395,
+      "R2": -0.021804552936962818
+    },
+    "Ridge regression": {
+      "MAE": 414.30112698744597,
+      "RMSE": 669.2804293776088,
+      "R2": 0.9927153083634448
+    },
+    "Random forest": {
+      "MAE": 236.0074260724855,
+      "RMSE": 508.36468748568393,
+      "R2": 0.9957971327570743
+    }
+  },
+  "test_daylight": {
+    "Mean baseline": {
+      "MAE": 7115.992364581764,
+      "RMSE": 8598.040553939678,
+      "R2": -0.4102205226953697
+    },
+    "Ridge regression": {
+      "MAE": 701.2996199117691,
+      "RMSE": 916.2559353482384,
+      "R2": 0.9839851950323102
+    },
+    "Random forest": {
+      "MAE": 462.78426446619187,
+      "RMSE": 712.5643248145558,
+      "R2": 0.9903141842664297
+    }
+  },
+  "daylight_rows": 341
+}

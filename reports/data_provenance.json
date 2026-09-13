@@ -1,0 +1,8 @@
+{
+  "source": "https://www.kaggle.com/api/v1/datasets/download/anikannal/solar-power-generation-data",
+  "archive_sha256": "fecbfdd22aca74bd5e89c56e7ef5de4a06a02e00bc5125e6fd64ff3855690c32",
+  "files": {
+    "Plant_1_Generation_Data.csv": "882f75f1c295946633617646cc92343ddb6fb821a2546c82f7e5cc737a13624e",
+    "Plant_1_Weather_Sensor_Data.csv": "91325041328745c288cb809aebd8b1b59cde54284500902ead1fb393499d6806"
+  }
+}
